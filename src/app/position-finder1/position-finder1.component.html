@@ -1,0 +1,8 @@
+<p>position-finder1 works!</p>
+<<div>
+    <input type="text" [(ngModel)]="number" placeholder="Enter a 5-digit number">
+    <button (click)="checkDigits()">Check Digits</button>
+    <p *ngIf="duplicatedDigits.length > 0">Duplicated Digits: {{ duplicatedDigits.join(', ') }}</p>
+    <p *ngIf="duplicatedDigits.length === 0">No duplicated digits found.</p>
+  </div>
+  

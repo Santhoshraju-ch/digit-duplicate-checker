@@ -1,0 +1,62 @@
+<h2>value-checker.component.html</h2>
+
+ <!--   
+    <input type="text" [(ngModel)]="inputText1" placeholder="Enter text 1">
+<input type="text" [(ngModel)]="inputText2" placeholder="Enter text 2">
+
+<div *ngIf="inputText1 && inputText2">
+  <p>Duplicated digit count: {{ countDuplicatedDigits() }}</p>
+</div>
+-->
+<br>
+<br>
+
+
+<input [(ngModel)]="inputText1" type="text" placeholder="Input Text 1">
+<input [(ngModel)]="inputText2" type="text" placeholder="Input Text 2">
+<button (click)="compareValues()">Compare</button>
+<p>Duplicate Count: {{ duplicateCount }}</p>
+<p>Index Matched: {{ indexMatched }}</p>
+
+
+
+
+<h2>  Duplicated Values Count</h2>
+<input [(ngModel)]="inputText1" placeholder="Enter text 1">
+<input [(ngModel)]="inputText2" placeholder="Enter text 2">
+
+<p>Duplicated Values Count: {{ duplicatedValuesCount}}</p>
+<button (click)="checkDuplicatedValues()">Check Duplicates</button>
+
+
+<br>
+<br>
+<br>
+
+<h2>other duplicated and position values also</h2>
+<input type="text" [(ngModel)]="text1" placeholder="Enter Text 1">
+<input type="text" [(ngModel)]="text2" placeholder="Enter Text 2">
+<div *ngIf="duplicates.length > 0">
+  <p>Duplicated Values:</p>
+
+
+
+ <!--
+  
+  div *ngIf="duplicates.length > 0">
+  <p>Duplicated Values:</p>
+  
+  <ul>
+    <li *ngFor="let duplicate of duplicates;index:index">
+      
+      {{ duplicate.value }} (Count: {{ duplicate.count+1 }}, Positions: {{ duplicate.positions}}</li>
+  </ul>
+-->
+
+<ul>
+    <li *ngFor="let duplicate of duplicates;index:index">
+      
+      {{ duplicate.value}} (Count: {{ duplicate.count}}, Positions: {{ duplicate.positions}}</li>
+  </ul>
+</div>
+<button (click)="findDuplicates()">Check Duplicates</button>

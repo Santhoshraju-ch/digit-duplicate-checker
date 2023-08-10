@@ -1,0 +1,10 @@
+<p>number-checker works!12345</p>
+<div>
+    <label for="inputNumber">Enter a 5-digit number:</label>
+    <input type="text" id="inputNumber" [(ngModel)]="inputNumber">
+    <button (click)="checkNumber()">Check</button>
+    
+    <p>Predefined List: [12345, 67890, 54321, 98765, 43210]</p>
+    <p>Input Number: {{ inputNumber }}</p>
+  </div>
+  

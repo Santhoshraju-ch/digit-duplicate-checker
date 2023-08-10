@@ -1,0 +1,24 @@
+<p>text-compare-component-values works!</p>
+<input [(ngModel)]="inputText1" placeholder="Enter text 1">
+<input [(ngModel)]="inputText2" placeholder="Enter text 2">
+<button (click)="compareTexts()">Compare</button>
+<p>{{ result }}</p>
+
+
+<!-- app.component.html -->
+<div>
+    <input [(ngModel)]="inputText1" placeholder="Input Text 1">
+    <input [(ngModel)]="inputText2" placeholder="Input Text 2">
+  </div>
+  <div>
+    <button (click)="compareInputs()">Compare Inputs</button>
+  </div>
+  <div *ngIf="comparisonResult">
+    <p>Duplicated Digits Count: {{ comparisonResult.duplicatedDigitsCount }}</p>
+    <p>Unique Values: {{ comparisonResult.uniqueValues }}</p>
+    <p>Index Positions of Matched Values: {{ comparisonResult.matchedIndexes }}</p>
+  </div>
+  
+
+  
+  

@@ -1,0 +1,15 @@
+<h2>----------jxlkfsa</h2>
+<div>
+  <label for="numberInput">Enter a 5-digit number:</label>
+  <input type="number" id="numberInput" [(ngModel)]="number">
+<!--
+  <button (click)="findDuplicates()">Find Duplicates</button>
+-->
+
+  <p *ngIf="duplicateDigits">
+    Duplicated digits: {{ duplicateDigits }}
+  </p>
+  <p *ngIf="!duplicateDigits">
+    No duplicated digits found.
+  </p>
+</div>

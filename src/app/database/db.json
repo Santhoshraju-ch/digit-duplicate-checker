@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": "6",
+      "name": "bhairava Sir",
+      "Date": "2023-08-16",
+      "email": "bhavara@gmail.com",
+      "phone": "4157896",
+      "address": "Mysore"
+    },
+    {
+      "id": "12",
+      "name": "Ramya sri madam",
+      "Date": "2023-08-15",
+      "email": "ramyasri@gmail.com",
+      "phone": "4587965",
+      "address": "mysore"
+    },
+    {
+      "id": "2356",
+      "name": "",
+      "Date": "",
+      "email": "",
+      "phone": "",
+      "address": ""
+    }
+  ]
+}

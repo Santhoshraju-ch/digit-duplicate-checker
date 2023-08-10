@@ -1,0 +1,41 @@
+<p>edit-student works!</p>
+<h3>Update Student</h3>
+
+<form [formGroup]="editStudent" (ngSubmit)="updateData()">
+    <div class="md-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" placeholder="Id" formControlName="id" />   
+      </div>
+
+  <div class="md-3">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control" placeholder="Name" formControlName="name"/>   
+  </div>
+
+  <div class="md-3">
+    <label class="form-label">Date</label>
+    <input type="date" class="form-control" placeholder="Date" formControlName="Date" />   
+  </div>
+
+  <div class="md-3">
+    <label class="form-label">Email</label>
+    <input type="text" class="form-control" placeholder="Email" formControlName="email"/>   
+  </div>
+
+
+  <div class="md-3">
+    <label class="form-label">Phone</label>
+    <input type="text" class="form-control" placeholder="Phone" formControlName="phone"/>   
+  </div>
+
+  <div class="md-3">
+    <label class="form-label">Address</label>
+    <input type="text" class="form-control" placeholder="Address" formControlName="address"/>   
+  </div>
+<button type="submit" class="btn btn-primaty" >Submit</button>
+  </form>
+  
+
+  
+
+

@@ -1,0 +1,20 @@
+<h2>duplicate-check-app works!first</h2>
+
+
+<div>
+    
+    <textarea [(ngModel)]="inputString" placeholder="Enter text with 5-digit numbers"></textarea>
+    <button (click)="findDuplicates()">Find Duplicates</button>
+  </div>
+  
+  <div *ngIf="duplicates.length > 0">
+    <h3>Duplicate 5-digit numbers:</h3>
+    <ul>
+      <li *ngFor="let duplicate of duplicates">{{ duplicate }}</li>
+    </ul>
+  </div>
+  
+  <div *ngIf="duplicates.length === 0">
+    <p>No duplicate 5-digit numbers found.</p>
+  </div>
+  

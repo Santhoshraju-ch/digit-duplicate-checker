@@ -1,0 +1,12 @@
+<p>number-generator-component works!</p>
+<div>
+    <label for="numberInput">Enter a 5-Digit Number:</label>
+    <input id="numberInput" type="number" [(ngModel)]="userInput">
+    <button (click)="findNumber()">Find Number</button>
+    
+    <div *ngIf="userInput !== null">
+      <p *ngIf="numberFound">{{ userInput }} exists in the data.</p>
+      <p *ngIf="!numberFound">{{ userInput }} does not exist in the data.</p>
+    </div>
+  </div>
+  

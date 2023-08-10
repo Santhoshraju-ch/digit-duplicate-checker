@@ -1,0 +1,32 @@
+<p>digit-duplicate-checker-component works!</p>
+<!--
+<input [(ngModel)]="inputText1" placeholder="Enter Text 1">
+<input [(ngModel)]="inputText2" placeholder="Enter Text 2">
+<button (click)="compareTexts()">Compare</button>
+
+<p>Duplicate Values Count: {{ duplicateValuesCount }}</p>
+<p>Duplicate Index Mismatch Count: {{ indexMismatchCount }}</p>
+
+
+-->
+
+<label for="fvalue">Enter Value:</label>
+ 
+<input type="text" id="fvalue" name="fvalue" [(ngModel)]="text1" placeholder="Input value 1" />
+    
+<label for="fvalue">Sencod Enter Value:</label>
+<input  type="text" id="svalue" name="svalue"  [(ngModel)]="text2" placeholder="Input value 2" />
+
+
+<button (click)="compareTexts12()">Compare</button>
+    <div>
+      Duplicated Digits in Unique Positions: {{ countUnique }}
+    </div>
+    <div>
+      Duplicated Digits in Different Positions: {{ countDifferent }}
+    </div>
+   
+  
+  
+  
+  
